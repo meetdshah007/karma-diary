@@ -17,28 +17,28 @@ const routes: Routes = [{
     children: [{
       path: '',
       loadChildren: () =>
-        import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        import('../search/search.module').then(m => m.SearchPageModule)
     }]
   }, {
     path: 'create',
     children: [{
       path: '',
       loadChildren: () =>
-        import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        import('../create/create.module').then(m => m.CreatePageModule)
     }]
   }, {
     path: 'activity',
     children: [{
       path: '',
       loadChildren: () =>
-        import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        import('../activity/activity.module').then(m => m.ActivityPageModule)
     }]
   }, {
     path: 'karma',
     children: [{
       path: '',
       loadChildren: () =>
-        import('../tab3/tab3.module').then(m => m.Tab3PageModule)
+        import('../karma/karma.module').then(m => m.KarmaPageModule)
     }]
   }, {
     path: '',
