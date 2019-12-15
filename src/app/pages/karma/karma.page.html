@@ -1,9 +1,58 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>karma</ion-title>
+    <ion-item slot="start" lines="none">
+      <div class="ion-img-wrapper">
+        <ion-img slot="icon-only" src="/assets/final-h-logo.png"></ion-img>
+      </div>
+    </ion-item>
+
+    <ion-item slot="end" lines="none">
+      <ion-avatar>
+        <img src="/assets/avatar.svg">
+      </ion-avatar>
+    </ion-item>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding-top">
 
+  <ion-list class="ion-padding-horizontal" lines="none">
+    <ion-segment class="karma-segment" mode="ios" (ionChange)="segmentChanged($event)" value="paap">
+      <ion-segment-button mode="ios" value="paap">
+        <ion-label>Paap</ion-label>
+      </ion-segment-button>
+      <ion-segment-button mode="ios" value="punya">
+        <ion-label>Punya</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+
+
+    <ion-card class="ion-margin-top ion-padding-bottom">
+      <ion-card-content class="ion-no-padding">
+        <ion-item>
+          <ion-text class="ghada-stack" slot="end">
+            <div>STACK</div>
+            <div>100</div>
+          </ion-text>
+        </ion-item>
+
+        <ion-item>
+          <div class="ghada-wrapper">
+            <ion-img src="/assets/ghado.png"></ion-img>
+            <div class="ghada-level"></div>
+          </div>
+          <div class="ghada-wrapper">
+            <ion-img src="/assets/ghado.png"></ion-img>
+          </div>
+          <div class="ghada-wrapper">
+            <ion-img src="/assets/ghado.png"></ion-img>
+          </div>
+        </ion-item>
+      </ion-card-content>
+    </ion-card>
+
+    <karma-post></karma-post>
+    <karma-post></karma-post>
+
+  </ion-list>
 </ion-content>

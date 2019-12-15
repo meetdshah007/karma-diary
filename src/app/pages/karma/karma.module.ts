@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { KarmaPageRoutingModule } from './karma-routing.module';
 
 import { KarmaPage } from './karma.page';
+import { ComponentModule } from '../../components/component.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentModule,
     KarmaPageRoutingModule
   ],
   declarations: [KarmaPage]
 })
-export class KarmaPageModule {}
+export class KarmaPageModule { }

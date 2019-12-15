@@ -12,4 +12,7 @@ export class KarmaPage implements OnInit {
   ngOnInit() {
   }
 
+  segmentChanged(value) {
+
+  }
 }

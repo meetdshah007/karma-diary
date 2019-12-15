@@ -1,0 +1,39 @@
+.ion-img-wrapper {
+  max-width: 155px;
+  display: flex;
+}
+
+.karma-segment {
+  ion-segment-button {
+    --border-radius: 25px;
+    ion-label {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+  }
+}
+
+.ghada-stack {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.ghada-wrapper {
+  height: 120px;
+  display: flex;
+  flex: 1;
+  position: relative;
+
+  ion-img {
+    z-index: 1;
+  }
+  
+  .ghada-level {
+    background: #4AC1EB;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+}
