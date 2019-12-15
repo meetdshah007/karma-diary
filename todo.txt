@@ -1,7 +1,9 @@
+font-installation
+primary colors generation
+
+
 -- Priority
 auth-guard to protect the login screen.
-primary colors generation
-font-installation
 icon-generation and usage in the tabs
 design onboarding screen
 design home screen

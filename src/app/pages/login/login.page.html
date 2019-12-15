@@ -3,27 +3,27 @@
     <ion-img src="/assets/karma-diary-splash.jpg"></ion-img>
   </div>
   <form>
-    <ion-list>
-      <ion-item class="ion-padding-horizontal" mode="md">
+    <ion-list class="ion-padding-horizontal">
+      <ion-item mode="md">
         <ion-label color="primary" position="floating">Username</ion-label>
         <ion-input></ion-input>
       </ion-item>
 
-      <ion-item class="ion-padding-horizontal" mode="md">
+      <ion-item mode="md">
         <ion-label color="primary" position="floating">Password</ion-label>
         <ion-input></ion-input>
       </ion-item>
 
-      <ion-item lines="none" class="ion-margin-top text-center ion-padding-horizontal" mode="md">
-        <ion-text color="dark">Forgot password?</ion-text>
+      <ion-item lines="none" class="ion-margin-top" mode="md">
+        <ion-text color="dark" slot="end">Forgot password?</ion-text>
       </ion-item>
 
-      <ion-button class="ion-padding-horizontal ion-margin-top" shape="round" expand="block" [routerLink]="['/tabs']">
+      <ion-button class="ion-margin-top font-bold" shape="round" expand="block" [routerLink]="['/tabs']">
         SIGN IN
       </ion-button>
 
       <ion-item lines="none" class="ion-margin-top text-center" mode="md">
-        <ion-text color="primary">Register here For a new account</ion-text>
+        <ion-text color="primary" class="font-bold">Register here For a new account</ion-text>
       </ion-item>
 
     </ion-list>
@@ -32,6 +32,6 @@
 
 <ion-footer>
   <ion-toolbar lines="none">
-    <ion-title color="primary">Powered by Karma Diary</ion-title>
+    <ion-title color="primary" class="font-bold">Powered by Karma Diary</ion-title>
   </ion-toolbar>
 </ion-footer>
