@@ -1,0 +1,24 @@
+.karma-post {
+    .user-name {
+        font-size: 20px;
+    }
+
+    .karma-image {
+        border-radius: 8px;
+        border-radius: 8px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    ion-list {
+        margin-bottom: 10px;
+    }
+
+    [color="light"] {
+        color: #BEBEBE;
+    }
+
+    .user-likes {
+        padding: 0px 1px;
+    }
+}

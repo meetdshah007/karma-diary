@@ -3,9 +3,11 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 
 import { PlaceholderComponent } from './placeholder/placeholder.component';
+import { PostComponent } from './post/post.component';
 
 const components = [
-  PlaceholderComponent
+  PlaceholderComponent,
+  PostComponent
 ];
 
 @NgModule({
