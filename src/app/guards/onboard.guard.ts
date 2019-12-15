@@ -18,7 +18,7 @@ export class OnboardGuard implements CanActivate {
       this.router.navigate(['login']);
       return false;
     }
-    // this.util.setLocalStorage('onboard', true);
+    this.util.setLocalStorage('onboard', true);
     return true;
   }
 }
