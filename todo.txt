@@ -1,11 +1,14 @@
 font-installation
 primary colors generation
+icon-generation and usage in the tabs
+design onboarding screen
+-- Generating
+icon
+splash
 
 
 -- Priority
 auth-guard to protect the login screen.
-icon-generation and usage in the tabs
-design onboarding screen
 design home screen
 design search screen
 design create post screen
@@ -13,10 +16,6 @@ design karma screen
 design activity scren
 design setting screen
 design profile screen
-
--- Generating
-icon
-splash
 
 -- Functionality
 Firebase setup
