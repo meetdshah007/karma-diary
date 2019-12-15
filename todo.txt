@@ -1,0 +1,33 @@
+-- Priority
+auth-guard to protect the login screen.
+primary colors generation
+font-installation
+icon-generation and usage in the tabs
+design onboarding screen
+design home screen
+design search screen
+design create post screen
+design karma screen
+design activity scren
+design setting screen
+design profile screen
+
+-- Generating
+icon
+splash
+
+-- Functionality
+Firebase setup
+Login Screen
+Home Screen
+Search Screen
+Create Post screen
+Profile Screen
+
+
+-- Non Priority
+design forgetpassword screen
+design register user screen
+design post-register user screen
+design edit-profile screen
+

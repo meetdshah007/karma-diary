@@ -14,6 +14,10 @@ const routes: Routes = [
   },
   {
     path: 'onboard', loadChildren: './pages/onboard/onboard.module#OnboardPageModule', canActivate: [OnboardGuard]
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   }
 ];
 @NgModule({

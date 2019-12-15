@@ -10,12 +10,12 @@ export class OnboardGuard implements CanActivate {
   constructor(
     private router: Router,
     private util: UtilService
-  ) {}
+  ) { }
 
   canActivate(route: ActivatedRouteSnapshot): boolean {
     const onboard = this.util.getLocalStorage('onboard');
-    if(onboard) {
-      this.router.navigate(['tabs']);
+    if (onboard) {
+      this.router.navigate(['login']);
       return false;
     }
     this.util.setLocalStorage('onboard', true);

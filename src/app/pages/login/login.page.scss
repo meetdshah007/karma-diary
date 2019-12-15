@@ -1,0 +1,13 @@
+.ion-img-wrapper {
+    max-height: 280px;
+    display: flex;
+    margin-top: 25px;
+}
+
+.text-center {
+    ::ng-deep {
+        ion-text::ng-deep {
+            margin: auto;
+        }
+    }
+}
