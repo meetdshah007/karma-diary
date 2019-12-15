@@ -10,7 +10,7 @@ const routes: Routes = [{
     children: [{
       path: '',
       loadChildren: () =>
-        import('../tab1/tab1.module').then(m => m.Tab1PageModule)
+        import('../home/home.module').then(m => m.HomePageModule)
     }]
   }, {
     path: 'search',
