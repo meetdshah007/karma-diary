@@ -1,0 +1,7 @@
+{
+  "name": "karma-diary",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

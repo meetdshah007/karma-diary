@@ -1,0 +1,12 @@
+.custom-skeleton {
+    background: #fff;
+    ion-skeleton-text {
+        line-height: 20px;
+        &:last-child {
+            margin-bottom: 5px;
+        }
+    }
+    &.grey-border {
+        border: 1px solid #EEEEEE;
+    }
+}
