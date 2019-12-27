@@ -39,13 +39,21 @@
         <ion-item>
           <div class="ghada-wrapper">
             <ion-img src="/assets/ghado.png"></ion-img>
-            <div class="ghada-level"></div>
+            <div class="ghada-level" [style.marginTop]="percentage"></div>
+            <div class="ghada-status" [ngClass]="{'text-white': ((100 - actualPercentage) > 60)}">
+              {{100 - actualPercentage}}%</div>
           </div>
           <div class="ghada-wrapper">
             <ion-img src="/assets/ghado.png"></ion-img>
+            <div class="ghada-level second" [style.marginTop]="percentage2"></div>
+            <div class="ghada-status" [ngClass]="{'text-white': ((100 - actualPercentage2) > 60)}">
+              {{100 - actualPercentage2}}%</div>
           </div>
           <div class="ghada-wrapper">
             <ion-img src="/assets/ghado.png"></ion-img>
+            <div class="ghada-level third" [style.marginTop]="percentage3"></div>
+            <div class="ghada-status" [ngClass]="{'text-white': ((100 -actualPercentage3) > 60)}">
+              {{100 - actualPercentage3}}%</div>
           </div>
         </ion-item>
       </ion-card-content>

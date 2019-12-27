@@ -19,10 +19,16 @@
 }
 
 .ghada-wrapper {
-  height: 120px;
   display: flex;
   flex: 1;
   position: relative;
+  width: 118px;
+  max-width: 120px;
+  min-width: 100px;
+  height: 150px;
+  max-height: 150px;
+  min-height: 150px;
+  margin: auto;
 
   ion-img {
     z-index: 1;
@@ -32,8 +38,34 @@
     background: #4AC1EB;
     position: absolute;
     top: 0px;
-    left: 0px;
-    right: 0px;
+    left: 6%;
+    right: 6%;
     bottom: 0px;
+    height: 100%;
+    margin-top: 101%;
+    transition-duration: .6s;
+    &.second {
+      background: #FFAB31;
+    }
+
+    &.third {
+      background: #F34741;
+    }
+  }
+
+  .ghada-status {
+    position: absolute;
+    color: #000;
+   
+    left: 0;
+    top: 50%;
+    font-size: 16px;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+
+    &.text-white {
+      color: #fff;
+    }
   }
 }
