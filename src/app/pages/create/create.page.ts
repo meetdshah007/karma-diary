@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create.page.scss'],
 })
 export class CreatePage implements OnInit {
+  papType: boolean = false;
+  punyaType: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  selectLocation() {
+
+  }
 }

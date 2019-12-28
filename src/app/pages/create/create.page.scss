@@ -1,0 +1,26 @@
+.create-post {
+    [color="light"] {
+        color: #BEBEBE;
+    }
+
+    .border-bottom {
+        border-bottom: 1px solid #BEBEBE;
+    }
+    
+    .custom-ion-item {
+        --full-highlight-height: 0;
+        ion-textarea {
+            border-bottom: 1px solid #BEBEBE;
+        }
+    }
+
+    .upload-btn {
+        display: flex;
+        align-items: center;
+
+        .upload-image {
+            width: 40px;
+            margin-right: 10px;
+        }
+    }
+}

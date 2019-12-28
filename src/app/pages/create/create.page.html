@@ -1,9 +1,50 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>create</ion-title>
+    <ion-title color="primary" class="font-bold">Create</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="create-post">
+
+  <ion-list lines="none">
+
+    <ion-item class="ion-margin-bottom custom-ion-item">
+      <ion-avatar slot="start">
+        <img src="/assets/avatar.svg">
+      </ion-avatar>
+      <ion-textarea placeholder="Description"></ion-textarea>
+    </ion-item>
+
+
+    <ion-text class="ion-padding-start" color="light">Select your Karma</ion-text>
+    <ion-item>
+      <ion-label class="ion-no-margin">Punya</ion-label>
+      <ion-toggle mode="md" [(ngModel)]="punyaType" (ionChange)="papType = !punyaType"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="ion-no-margin">Paap</ion-label>
+      <ion-toggle mode="md" [(ngModel)]="papType" (ionChange)="punyaType = !papType"></ion-toggle>
+    </ion-item>
+
+    <ion-item mode="ios" (click)="selectLocation()" detail>
+      <ion-label class="border-bottom" color="light">Location</ion-label>
+    </ion-item>
+
+    <ion-item mode="ios" (click)="selectLocation()" detail>
+      <ion-label class="border-bottom upload-btn">
+        <ion-img class="upload-image" src="/assets/select-images.svg"></ion-img>
+        <span>Upload Photo</span>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-button expand="full" size="large" color="primary" routerLink="/tabs/karma">
+      SHARE
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>
